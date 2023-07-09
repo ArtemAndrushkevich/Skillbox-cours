@@ -1,0 +1,311 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+  background-color: #E5E5E5;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.title-2 {
+  margin: 0;
+}
+
+.descr {
+  margin: 0;
+}
+
+
+
+
+.header {
+  margin-bottom: 70px;
+}
+
+.header-menu {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-user {
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-user {
+  color: #CC9933;
+}
+
+.nav-info {
+  background-color: #fff;
+  height: 70px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.nav-list {
+  align-items: center;
+}
+
+.nav-item-list {
+  margin-left: 45px;
+}
+
+.btn-nav {
+  margin-left: auto;
+}
+
+.btn {
+  padding: 13px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  color: #CC9933;
+}
+
+.nav-btn-tour {
+  margin-right: 40px;
+}
+
+.nav-btn-call {
+  margin-right: 45px;
+}
+
+
+.preview {
+  margin-bottom: 70px;
+}
+
+.preview-cards {
+  margin-right: 24px;
+  height: 258px;
+  width: 573px;
+  border-radius: 15px;
+}
+
+.preview-cards-up {
+  margin-bottom: 24px;
+}
+
+.preview-card-up-img {
+  background-image: url(../img/preview-1.png);
+}
+
+.preview-card-down-img {
+  background-image: url(../img/preview-2.png);
+}
+
+.preview-card-right-img {
+  background-image: url(../img/preview-3.jpg);
+}
+
+.preview-card {
+  height: 540px;
+  width: 573px;
+  border-radius: 15px;
+}
+
+.preview-card-right {
+  margin: 0;
+  padding: 0;
+}
+
+
+.info {
+  margin-bottom: 70px;
+}
+
+.section-info-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.services {
+  margin-bottom: 70px;
+}
+
+.services-items {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  height: 330px;
+  width: 573px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.services-item:not(:nth-child(2n)){
+  margin-right: 20px;
+}
+.services-item:not(:nth-child(n + 2)){
+  margin-bottom: 20px;
+}
+.services-item-link {
+  color: #CC9933;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}
+.services-item-descr {
+  height: 64px;
+  width: 402px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.services-text {
+  padding: 0;
+  margin: 0;
+  padding-top: 191px;
+  padding-left: 45px;
+  width: 402px;
+  height: 104px;
+}
+
+.services-item-img-1 {
+  background-image: url(../img/services-1.png);
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
+}
+
+.services-item-img-2 {
+  background-image: url(../img/services-2.png);
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
+
+}
+
+.services-item-img-3 {
+  background-image: url(../img/services-3.png);
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
+}
+
+.services-item-img-4 {
+  background-image: url(../img/services-4.png);
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
+}
+
+
+
+
+.advantages{
+  margin-bottom: 70px;
+}
+.advanages-items {
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  padding-left: 45px;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 276px;
+  width: 276px;
+}
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+.advantages-item:not(:nth-child(n + 4)) {
+  margin-bottom: 22px;
+}
+.advantages-item-img {
+  padding-top: 40px;
+}
+.advanages-items-descr {
+  height: 128px;
+  width: 189px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.placing {
+  margin-bottom: 70px;
+}
+.placing-items {
+  flex-wrap: wrap;
+}
+.placing-item {
+  width: 347px;
+  height: 440px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 15px;
+
+}
+.placing-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+.placing-item-pri-rat {
+  padding-left: 45px;
+  padding-right: 45px;
+  justify-content: space-between;
+}
+.placing-item-name {
+  padding-left: 45px;
+}
+.placing-item-location {
+  padding-left: 45px;
+}
+.placing-item-btn {
+  margin-left: 45px;
+}
+.placing-item-img {
+  background-image: url(../img/placing.png);
+}
+
+
+
+

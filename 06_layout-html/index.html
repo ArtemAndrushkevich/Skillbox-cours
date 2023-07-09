@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
-    <div class="conteiner">
-      <div>
+    <div class="container">
+      <div class="header-menu flex">
         <a class="header-logo" href="#">
           <img class="header-logo-img" src="img/logo.png" alt="logo">
         </a>
@@ -21,10 +23,10 @@
           Личный кабинет
         </a>
       </div>
-      <div>
+      <div class="nav-info flex">
         <nav class="nav">
           <div class="conteiner">
-            <ul class="nav-list">
+            <ul class="list-reset nav-list flex">
               <li class="nav-item-list">
                 <a href="#info" class="nav-link">
                   О&nbsp;нас
@@ -58,11 +60,11 @@
             </ul>
           </div>
         </nav>
-        <div>
-          <button class="btn nav-btn-tour">
+        <div class="btn-nav">
+          <button class="btn nav-btn-tour btn-reset">
             Хочу тур
           </button>
-          <button class="btn nav-btn-call">
+          <button class="btn nav-btn-call btn-reset">
             Обратный звонок
           </button>
         </div>
@@ -71,56 +73,59 @@
   </header>
   <main class="main">
     <section class="preview">
-      <div class="conteiner">
+      <div class="container">
         <h2 class="title preview-title">
           Спецпредложения
         </h2>
-        <div class="preview-card-left">
-          <div class="preview-cards preview-card-up-img">
-            <h3 class="preview-cards-title">
-              Мальдивские острова
-            </h3>
-            <p class="preview-cards-descr">
-              от&nbsp;55&nbsp;000 (рублей)
-            </p>
-            <a class="preview-cards-link" href="#">
-              Подробнее
-            </a>
+        <div class="card flex">
+          <div class="preview-card-left">
+            <div class="preview-cards preview-cards-up preview-card-up-img">
+              <h3 class="preview-cards-title title-2">
+                Мальдивские острова
+              </h3>
+              <p class="descr preview-cards-descr">
+                от&nbsp;55&nbsp;000
+              </p>
+              <a class="preview-cards-link" href="#">
+                Подробнее
+              </a>
+            </div>
+            <div class="preview-cards preview-card-down-img">
+              <h3 class="preview-cards-title title-2">
+                Горящий тур на&nbsp;остров Крит
+              </h3>
+              <p class="descr preview-cards-descr">
+                от&nbsp;30&nbsp;000
+              </p>
+              <a class="preview-cards-link" href="#">
+                Подробнее
+              </a>
+            </div>
           </div>
-          <div class="preview-cards preview-card-down-img">
-            <h3 class="preview-cards-title">
-              Горящий тур на&nbsp;остров Крит
-            </h3>
-            <p class="preview-cards-descr">
-              от&nbsp;30&nbsp;000
-            </p>
-            <a class="preview-cards-link" href="#">
-              Подробнее
-            </a>
-          </div>
+          <div class="preview-card-right">
+            <div class="preview-card preview-card-right-img">
+              <h3 class="preview-card-title title-2">
+                Номера категории люкс
+              </h3>
+              <p class="descr preview-card-descr">
+                от&nbsp;5&nbsp;000
+              </p>
+              <a class="preview-card-link" href="#">
+                Подробнее
+              </a>
+            </div>
         </div>
-        <div class="preview-card-right">
-          <div class="preview-card preview-card-right-img">
-            <h3 class="preview-card-title">
-              Номера категории люкс
-            </h3>
-            <p class="preview-card-descr">
-              от&nbsp;5&nbsp;000
-            </p>
-            <a class="preview-card-link" href="#">
-              Подробнее
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
     <section id="info" class="info">
-      <div class="conteiner">
+      <div class="container">
         <div class="section-info">
           <h2 class="title section-info-title">
             О&nbsp;нас
           </h2>
-          <p class="section-info-descr">
+          <p class="descr section-info-descr">
             Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт
             за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует
             насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие
@@ -133,104 +138,120 @@
       </div>
     </section>
     <section id="services" class="services">
-      <div class="conteiner">
+      <div class="container">
         <div class="section-services">
           <h2 class="title services-title">
             Услуги
           </h2>
-          <ul class="services-items">
-            <li class="services-item">
-              <h3>
-                <a class="services-item-link" href="#">
-                  Эксклюзивное обслуживание
-                </a>
-              </h3>
-              <p class="services-item-descr">
-                Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
-              </p>
+          <ul class="list-reset services-items flex">
+            <li class="services-item services-item-img-1">
+              <article class="services-text">
+                <h3 class="title-2">
+                  <a class="services-item-link" href="#">
+                    Эксклюзивное обслуживание
+                  </a>
+                </h3>
+                <p class="descr services-item-descr">
+                  Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
+                </p>
+              </article>
             </li>
-            <li class="services-item">
-              <h3>
+            <li class="services-item services-item-img-2">
+              <div class="services-text">
+              <h3 class="title-2">
                 <a class="services-item-link" href="#">
                   Аренда банкетных залов
                 </a>
               </h3>
-              <p class="services-item-descr">
+              <p class="descr services-item-descr">
                 Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
               </p>
+              </div>
             </li>
-            <li class="services-item">
-              <h3>
+            <li class="services-item services-item-img-3">
+              <div class="services-text">
+              <h3 class="title-2">
                 <a class="services-item-link" href="#">
                   Сауны, бассейны, бани, фитнес-залы
                 </a>
               </h3>
-              <p class="services-item-descr">
+              <p class="descr services-item-descr">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы
                 по&nbsp;формированию позиции
               </p>
+              </div>
             </li>
-            <li class="services-item">
-              <h3>
+            <li class="services-item services-item-img-4">
+              <div class="services-text">
+              <h3 class="title-2">
                 <a class="services-item-link" href="#">
                   Охраняемые автомобильные стоянки
                 </a>
               </h3>
-              <p class="services-item-descr">
+              <p class="descr services-item-descr">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы
                 по&nbsp;формированию позиции
               </p>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </section>
     <section id="advantages" class="advantages">
-      <div class="conteiner">
+      <div class="container">
         <div class="section-advantages">
           <h2 class="title advanteges-title">
             Преимущества
           </h2>
-          <ul class="advanages-items">
+          <ul class="list-reset advanages-items flex">
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-1.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Идейные соображения высшего порядка,
                 а&nbsp;также постоянный количественный рост
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-2.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-3.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Таким образом реализация плановых заданий играет важную роль для понимания
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-4.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Повседневная практика показывает, что сложившаяся структура организации
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-5.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-6.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего
                 сервиса
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-7.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Повседневная практика показывает, что дальнейшее развитие различных
               </p>
             </li>
             <li class="advantages-item">
-              <p class="advanages-items-descr">
+              <img class="advantages-item-img" src="img/advantages-8.svg" alt="">
+              <p class="descr advanages-items-descr">
                 Значимость этого настолько очевидна, что консультация наших экспертов помогает
               </p>
             </li>
@@ -239,38 +260,41 @@
       </div>
     </section>
     <section id="placing" class="placing">
-      <div class="conteiner">
+      <div class="container">
         <div class="section-placing">
           <h2 class="title placing-title">
             Размещение
           </h2>
-          <ul class="placing-items">
+          <ul class="list-reset placing-items flex">
             <li class="placing-item">
               <img src="img/lagoona-1.png" alt="Рейтинг отеля 4 из 5">
-              <div class="placing-item-price">
-                от&nbsp;4&nbsp;698
-              </div>
-              <div class="placing-item-rating">
-                <img src="img/i-star.png" alt="#">
-                <img src="img/i-star.png" alt="#">
-                <img src="img/i-star.png" alt="#">
-                <img src="img/i-star.png" alt="#">
-                <img src="img/i-star-empty.png" alt="#">
+              <div class="placing-item-pri-rat flex">
+                <div class="placing-item-price">
+                  от&nbsp;4&nbsp;698 /ночь
+                </div>
+                <div class="placing-item-rating">
+                  <img src="img/i-star.png" alt="#">
+                  <img src="img/i-star.png" alt="#">
+                  <img src="img/i-star.png" alt="#">
+                  <img src="img/i-star.png" alt="#">
+                  <img src="img/i-star-empty.png" alt="#">
+                </div>
               </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona espa&ntilde;ola
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-2.png" alt="Рейтинг отеля 4 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;5&nbsp;148
               </div>
@@ -281,20 +305,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star-empty.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona son t&iacute;picas
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-3.png" alt="Рейтинг отеля 5 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;254
               </div>
@@ -305,20 +331,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona de&nbsp;la&nbsp;guerra
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-4.png" alt="Рейтинг отеля 5 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;320
               </div>
@@ -329,20 +357,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona mentira piadosa
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-5.png" alt="Рейтинг отеля 4 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;457
               </div>
@@ -353,20 +383,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star-empty.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona empujar la&nbsp;creatividad
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-6.png" alt="Рейтинг отеля 4 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;320
               </div>
@@ -377,20 +409,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star-empty.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona el&nbsp;retorno
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-7.png" alt="Рейтинг отеля 5 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;505
               </div>
@@ -401,20 +435,22 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona mentira piadosa
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
             <li class="placing-item">
               <img src="img/lagoona-8.png" alt="Рейтинг отеля 4 из 5">
+              <div class="placing-item-pri-rat flex">
               <div class="placing-item-price">
                 от&nbsp;6&nbsp;824
               </div>
@@ -425,19 +461,20 @@
                 <img src="img/i-star.png" alt="#">
                 <img src="img/i-star-empty.png" alt="#">
               </div>
+              </div>
               <div class="placing-item-name">
-                <h3>
+                <h3 class="title-2">
                   Lagoona suerte sigui&oacute; siempre
                 </h3>
               </div>
               <div class="placing-item-location">
                 Барселона, Испания
               </div>
-                <button class="placing-item-btn">
+                <button class="placing-item-btn btn-reset">
                   Номера
                 </button>
             </li>
-            <li class="placing-item">
+            <li class="placing-item placing-item-img">
               <a class="placing-item-link" href="#">
                 Просмотреть все варианты
               </a>

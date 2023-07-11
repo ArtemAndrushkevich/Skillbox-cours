@@ -276,6 +276,7 @@ body {
 }
 .placing-items {
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .placing-item {
   width: 347px;

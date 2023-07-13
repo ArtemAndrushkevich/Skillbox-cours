@@ -250,6 +250,9 @@ body {
 
 .advantages-item {
   padding-left: 45px;
+  padding-right: 42px;
+  padding-bottom: 32px;
+  padding-top: 116px;
   border-radius: 15px;
   background-color: #fff;
   height: 276px;
@@ -261,15 +264,52 @@ body {
 .advantages-item:not(:nth-child(n + 4)) {
   margin-bottom: 22px;
 }
-.advantages-item-img {
-  padding-top: 40px;
-}
 .advanages-items-descr {
   height: 128px;
   width: 189px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+.advantages-item-img-1 {
+  background-image: url(../img/advantages-1.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-2 {
+  background-image: url(../img/advantages-2.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-3 {
+  background-image: url(../img/advantages-3.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-4 {
+  background-image: url(../img/advantages-4.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-5 {
+  background-image: url(../img/advantages-5.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-6 {
+  background-image: url(../img/advantages-6.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-7 {
+  background-image: url(../img/advantages-7.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
+}
+.advantages-item-img-8 {
+  background-image: url(../img/advantages-8.svg);
+  background-repeat: no-repeat;
+      background-position: 45px 40px;
 }
 .placing {
   margin-bottom: 70px;
@@ -304,9 +344,16 @@ body {
   margin-left: 45px;
 }
 .placing-item-img {
-  background-image: url(../img/placing.png);
+  margin-bottom: 32px;
 }
-
-
+.placing-item-price {
+  margin-bottom: 16px;
+}
+.placing-item-name {
+  margin-bottom: 16px;
+}
+.placing-item-location {
+  margin-bottom: 20px;
+}
 
 

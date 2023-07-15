@@ -179,6 +179,7 @@ body {
 }
 
 .services-item {
+  padding: 191px 126px 35px 45px;
   height: 330px;
   width: 573px;
   background-color: #fff;
@@ -203,14 +204,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-}
-.services-text {
-  padding: 0;
-  margin: 0;
-  padding-top: 191px;
-  padding-left: 45px;
-  width: 402px;
-  height: 104px;
 }
 
 .services-item-img-1 {
@@ -255,7 +248,7 @@ body {
   padding-top: 116px;
   border-radius: 15px;
   background-color: #fff;
-  height: 276px;
+  min-height: 276px;
   width: 276px;
 }
 .advantages-item:not(:nth-child(4n)) {
@@ -265,7 +258,7 @@ body {
   margin-bottom: 22px;
 }
 .advanages-items-descr {
-  height: 128px;
+  min-height: 128px;
   width: 189px;
   font-weight: 400;
   font-size: 16px;

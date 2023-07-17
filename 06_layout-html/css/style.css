@@ -187,7 +187,7 @@ body {
 
 .preview-cards {
   margin-right: 24px;
-  height: 258px;
+  min-height: 258px;
   width: 573px;
   border-radius: 15px;
   padding: 40px 108px 40px 45px;
@@ -199,14 +199,21 @@ body {
 
 .preview-card-up-img {
   background-image: url(../img/preview-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .preview-card-down-img {
   background-image: url(../img/preview-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .preview-card-right-img {
   background-image: url(../img/preview-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .preview-cards-title {
@@ -254,8 +261,6 @@ body {
 }
 
 .preview-card {
-  height: 540px;
-  width: 573px;
   border-radius: 15px;
   padding: 212px 229px 40px 45px;
 }
@@ -263,6 +268,8 @@ body {
 .preview-card-right {
   margin: 0;
   padding: 0;
+  min-height: 540px;
+  width: 573px;
 }
 
 
@@ -289,7 +296,7 @@ body {
 
 .services-item {
   padding: 191px 126px 35px 45px;
-  height: 330px;
+  min-height: 330px;
   width: 573px;
   background-color: #fff;
   border-radius: 15px;
@@ -298,7 +305,7 @@ body {
 .services-item:not(:nth-child(2n)){
   margin-right: 20px;
 }
-.services-item:not(:nth-child(n + 2)){
+.services-item:not(:nth-last-child(-n+2)){
   margin-bottom: 20px;
 }
 .services-item-link {
@@ -314,8 +321,6 @@ body {
   padding-right: 15px;
 }
 .services-item-descr {
-  height: 64px;
-  width: 402px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -426,8 +431,8 @@ body {
   flex-wrap: wrap;
 }
 .placing-item {
-  min-width: 374px;
-  height: 440px;
+  width: 374px;
+  min-height: 440px;
   margin-bottom: 24px;
   background-color: #fff;
   border-radius: 15px;
@@ -437,12 +442,7 @@ body {
   margin-right: 24px;
 }
 .placing-item-pri-rat {
-  padding-left: 45px;
-  padding-right: 45px;
   justify-content: space-between;
-}
-.placing-item-name {
-  padding-left: 45px;
 }
 .placing-item-name-title {
   font-weight: 400;
@@ -450,17 +450,15 @@ body {
   line-height: 16px;
 }
 .placing-item-location {
-  padding-left: 45px;
   color: #999999;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
 }
 .placing-item-btn {
-  margin-left: 45px;
+
 }
 .placing-item-img {
-  margin-bottom: 32px;
   border-radius: 15px 15px 0 0;
 }
 .placing-item-price {
@@ -480,6 +478,7 @@ body {
 .placing-item-img-last {
   background-image: url(../img/placing.png);
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
   padding: 373px 47px 27px 47px;
 }
@@ -493,5 +492,7 @@ body {
   background-position: right;
   padding-right: 15px;
 }
-
+.placing-block {
+  padding: 32px 45px 45px 45px;
+}
 

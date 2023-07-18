@@ -266,6 +266,7 @@ body {
 }
 
 .preview-card {
+  height: 100%;
   border-radius: 15px;
   padding: 212px 229px 40px 45px;
 }

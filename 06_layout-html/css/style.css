@@ -539,6 +539,7 @@ display: grid;
   border-radius: 15px;
 }
 .search_tour-descr {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -616,7 +617,7 @@ display: grid;
 .footer-img {
   background-image: url(../img/footer.png);
   background-repeat: no-repeat;
-  background-position: 739px 112px;
+  background-position: bottom 0 right 112px;
 }
 .footer-nav {
   width: 359px;

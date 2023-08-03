@@ -87,6 +87,7 @@ body {
   border-style: solid;
   border-radius: 10px;
   color: #CC9933;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .btn:focus {
@@ -109,7 +110,7 @@ body {
 }
 
 .grid {
-display: grid;
+  display: grid;
 }
 
 .container {
@@ -155,18 +156,14 @@ display: grid;
   margin-bottom: 30px;
 }
 
-.header-user {
-  margin-left: auto;
-}
-
 .header-logo {
   margin-right: 40px;
 }
-
 .header-number{
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  transition: color .4s ease-in-out;
 }
 .header-number:focus {
   color: #CC9933;
@@ -180,37 +177,47 @@ display: grid;
 .header-number:active {
   color: #A47312;
 }
-.header-user {
+.header__link {
+  margin-left: auto;
   align-items: center;
+}
+.header__link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: #CC9933;
+  transition: color .4s ease-in-out;
 }
-.header-user:focus {
+.header__link:focus .header__link-icon path {
+  fill: #F0BF5F;
+}
+.header__link:focus{
   color: #CC9933;
   outline-offset: 5px;
   outline-color: #CC9933;
   outline-width: 1px;
 }
-.header-user:hover {
-  fill: #333;
+.header__link:focus .header__link-text {
   color: #F0BF5F;
 }
-.header-user:active {
+.header__link:hover .header__link-icon path {
+  fill: #F0BF5F;
+}
+.header__link:hover .header__link-text{
+  color: #F0BF5F;
+}
+.header__link-text:active {
   color: #A47312;
+}
+.header__link-icon path {
+  transition: fill .4s ease-in-out;
 }
 .nav-info {
   background-color: #fff;
   height: 70px;
   border-radius: 15px;
   align-items: center;
-}
-.nav-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
 }
 .nav-list {
   align-items: center;
@@ -219,7 +226,12 @@ display: grid;
 .nav-item-list {
   margin-left: 45px;
 }
-
+.nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  transition: color .4s ease-in-out;
+}
 .nav-link:focus {
   color: #CC9933;
   outline-offset: 5px;
@@ -263,7 +275,9 @@ display: grid;
 .preview-cards-up {
   margin-bottom: 24px;
 }
-
+.preview-cards-up:hover .preview-cards-link-img {
+  transition: margin-left 10px;
+}
 .preview-card-up-img {
   background-image: url(../img/preview-1.png);
   background-repeat: no-repeat;
@@ -308,15 +322,28 @@ display: grid;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  align-items: center;
+}
+.preview-cards-link:focus{
+  outline-offset: 20px;
+  outline-color: #CC9933;
+  outline-width: 1px;
 }
 .preview-cards-link:active {
   color: #fff;
 }
-.preview-cards-link-img{
-  background-image: url(../img/rectangle.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 15px;
+.preview-cards-link-icon {
+  margin-left: 4px;
+  transition: margin-left 1s, 0.5s;
+}
+.preview-card-up-img:hover .preview-cards-link-icon {
+  margin-left: 20px;
+}
+.preview-card-down-img:hover .preview-cards-link-icon {
+  margin-left: 20px;
+}
+.preview-card-right-img:hover .preview-cards-link-icon {
+  margin-left: 20px;
 }
 .preview-card-descr{
   color: #fff;
@@ -387,18 +414,41 @@ display: grid;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+  align-items: center;
 }
-.services-item-link:hover{
+.services-item-link:focus .services-item-text {
   color: #F0BF5F;
 }
-.services-item-link:active{
+.services-item-link:focus .services-item-icon path {
+  stroke: #F0BF5F;
+}
+.services-item-link:hover .services-item-text {
+  color: #F0BF5F;
+}
+.services-item-link:hover .services-item-icon path {
+  stroke: #F0BF5F;
+}
+.services-item-link:active .services-item-text {
   color: #A47312;
 }
-.services-item-link-img{
-  background-image: url(../img/rectangle-2.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 15px;
+.services-item-link:active .services-item-icon path {
+  stroke: #A47312;
+}
+.services-item-icon {
+  margin-left: 4px;
+  transition: margin-left 1s, 0.5s;
+}
+.services-item-img-1:hover .services-item-icon {
+  margin-left: 20px;
+}
+.services-item-img-2:hover .services-item-icon {
+  margin-left: 20px;
+}
+.services-item-img-3:hover .services-item-icon {
+  margin-left: 20px;
+}
+.services-item-img-4:hover .services-item-icon {
+  margin-left: 20px;
 }
 .services-item-descr {
   font-weight: 400;
@@ -450,7 +500,7 @@ display: grid;
   background-color: #fff;
   min-height: 276px;
   width: 276px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .advantages-item:not(:nth-child(4n)) {
   margin-right: 22px;

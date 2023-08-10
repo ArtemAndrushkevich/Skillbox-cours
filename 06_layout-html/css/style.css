@@ -58,13 +58,17 @@ img {
   font-display: swap;
 }
 :root {
-
+  --color-orange: #CC9933;
+  --color-dark_orange: #A47312;
+  --color-light_orange: #F0BF5F;
+  --color-white: #fff;
+  --color-grey: #f1f1f1;
 }
 body {
   min-width: 1200px;
   font-family: 'Muller', sans-serif;
   font-weight: 400;
-  background-color: #F1F1F1;
+  background-color: var(--color-grey);
   margin-top: 30px;
 }
 
@@ -89,24 +93,24 @@ body {
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
-  color: #CC9933;
+  color: var(--color-orange);
   transition: background-color 0.4s ease-in-out;
 }
 
 .btn:focus {
-  color: #fff;
-  background-color: #CC9933;
+  color: var(--color-white);
+  background-color: var(--color-orange);
   outline: none;
 }
 
 .btn:hover {
-  color: #fff;
-  background-color: #CC9933;
+  color: var(--color-white);
+  background-color: var(--color-orange);
 }
 
 .btn:active {
-  background-color: #A47312;
-  color: #fff;
+  background-color: var(--color-dark_orange);
+  color: var(--color-white);
 }
 
 .flex {
@@ -146,20 +150,20 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #CC9933;
+  color: var(--color-orange);
   outline-offset: 5px;
-  outline-color: #CC9933;
+  outline-color: var(--color-orange);
   outline-width: 1px;
   transition: color 0.4s ease-in-out;
 }
 .link:focus {
-  color: #CC9933;
+  color: var(--color-orange);
 }
 .link:hover {
-  color: #F0BF5F;
+  color: var(--color-light_orange);
 }
 .link:active {
-  color: #A47312;
+  color: var(--color-dark_orange);
 }
 
 
@@ -183,16 +187,16 @@ body {
   transition: color .4s ease-in-out;
 }
 .header-number:focus {
-  color: #CC9933;
+  color: var(--color-orange);
   outline-offset: 5px;
-  outline-color: #CC9933;
+  outline-color: var(--color-orange);
   outline-width: 1px;
 }
 .header-number:hover {
-  color: #CC9933;
+  color: var(--color-orange);
 }
 .header-number:active {
-  color: #A47312;
+  color: var(--color-dark_orange);
 }
 .header__link {
   margin-left: auto;
@@ -204,32 +208,32 @@ body {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--color-orange);
   transition: color .4s ease-in-out;
 }
 .header__link:focus{
-  color: #CC9933;
+  color: var(--color-orange);
   outline-offset: 5px;
-  outline-color: #CC9933;
+  outline-color: var(--color-orange);
   outline-width: 1px;
 }
 .header__link:focus .header__link-icon path {
-  fill: #CC9933;
+  fill: var(--color-orange);
 }
 .header__link:focus .header__link-text {
-  color: #CC9933;
+  color: var(--color-orange);
 }
 .header__link:hover .header__link-icon path {
-  fill: #F0BF5F;
+  fill: var(--color-light_orange);
 }
 .header__link:hover .header__link-text{
-  color: #F0BF5F;
+  color: var(--color-light_orange);
 }
 .header__link:active .header__link-icon path {
-  fill: #A47312;
+  fill: var(--color-dark_orange);
 }
 .header__link:active .header__link-text{
-  color: #A47312;
+  color: var(--color-dark_orange);
 }
 .header__link-icon path {
   transition: fill .4s ease-in-out;
@@ -239,7 +243,7 @@ body {
   margin-right: 5px;
 }
 .nav-info {
-  background-color: #fff;
+  background-color: var(--color-white);
   height: 70px;
   border-radius: 15px;
   align-items: center;
@@ -258,18 +262,18 @@ body {
   transition: color .4s ease-in-out;
 }
 .nav-link:focus {
-  color: #CC9933;
+  color: var(--color-orange);
   outline-offset: 5px;
-  outline-color: #CC9933;
+  outline-color: var(--color-orange);
   outline-width: 1px;
 }
 
 .nav-link:hover {
-  color: #CC9933;
+  color: var(--color-orange);
 }
 
 .nav-link:active {
-  color: #A47312;
+  color: var(--color-dark_orange);
 }
 
 .btn-nav {
@@ -334,11 +338,11 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 15px;
 }
 .preview-cards-descr{
-  color: #fff;
+  color: var(--color-white);
   opacity: 80%;
   font-weight: 400;
   font-size: 20px;
@@ -346,11 +350,12 @@ body {
   margin-bottom: 47px;
 }
 .preview-cards-link {
-  color: #F0BF5F;
+  color: var(--color-light_orange);
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   align-items: center;
+  outline: none;
 }
 .preview-cards-link::before {
   content: '';
@@ -359,14 +364,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  outline: 2px solid var(--color-light_orange);
+  outline-offset: 5px;
+  opacity: 0;
 }
-.preview-cards-link:focus{
-  outline-offset: 20px;
-  outline-color: #CC9933;
-  outline-width: 1px;
+.preview-cards-link:focus::before{
+  opacity: 1;
 }
 .preview-cards-link:active {
-  color: #fff;
+  color: var(--color-white);
 }
 .preview-cards-link-icon {
   margin-left: 4px;
@@ -382,7 +388,7 @@ body {
   margin-left: 20px;
 }
 .preview-card-descr{
-  color: #fff;
+  color: var(--color-white);
   opacity: 80%;
   font-weight: 400;
   font-size: 30px;
@@ -394,7 +400,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 15px;
 }
 
@@ -439,7 +445,7 @@ body {
   padding: 191px 126px 35px 45px;
   min-height: 330px;
   width: 573px;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -448,11 +454,12 @@ body {
   margin-right: 20px;
 }
 .services-item-link {
-  color: #CC9933;
+  color: var(--color-orange);
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   align-items: center;
+  outline: none;
 }
 .services-item-link::before {
   content: '';
@@ -461,24 +468,30 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  outline: 2px solid var(--color-light_orange);
+  outline-offset: 5px;
+  opacity: 0;
+}
+.services-item-link:focus-visible::before {
+  opacity: 1;
 }
 .services-item-link:focus .services-item-text {
-  color: #F0BF5F;
+  color: var(--color-light_orange);
 }
 .services-item-link:focus .services-item-icon path {
-  stroke: #F0BF5F;
+  stroke: var(--color-light_orange);
 }
 .services-item-link:hover .services-item-text {
-  color: #F0BF5F;
+  color: var(--color-light_orange);
 }
 .services-item-link:hover .services-item-icon path {
-  stroke: #F0BF5F;
+  stroke: var(--color-light_orange);
 }
 .services-item-link:active .services-item-text {
-  color: #A47312;
+  color: var(--color-dark_orange);
 }
 .services-item-link:active .services-item-icon path {
-  stroke: #A47312;
+  stroke: var(--color-dark_orange);
 }
 .services-item-icon {
   margin-left: 4px;
@@ -543,7 +556,7 @@ body {
   padding-bottom: 32px;
   padding-top: 116px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--color-white);
   min-height: 276px;
   width: 276px;
   margin-bottom: 22px;
@@ -609,7 +622,7 @@ body {
   width: 374px;
   min-height: 440px;
   margin-bottom: 24px;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 15px;
 
 }
@@ -663,7 +676,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #fff;
+  color: var(--color-white);
   background-image: url(../img/rectangle-3.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -688,7 +701,7 @@ body {
   margin-bottom: 20px;
 }
 .search_tour-form {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 15px;
   padding: 32px 28px;
   justify-content: space-between;
@@ -717,7 +730,7 @@ body {
 }
 .contacts-block {
   padding: 45px;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 15px;
   justify-content: space-between;
 }
@@ -753,7 +766,7 @@ body {
   width: 145px;
 }
 .footer-block {
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 30px;
   padding: 45px;
   width: 1170px;
@@ -795,13 +808,16 @@ body {
 .footer-social-icon path{
   transition: fill 0.4s ease-in-out;
 }
+.footer-social-link:hover {
+  transform: scale(1.1) translate(-1px, -1px);
+}
 .footer-social-link:focus .footer-social-icon path {
-  fill: #CC9933;
+  fill: var(--color-orange);
 }
 .footer-social-link:hover .footer-social-icon path {
-  fill: #CC9933;
+  fill: var(--color-orange);
 }
 .footer-social-link:active .footer-social-icon path {
-  fill: #A47312;
+  fill: var(--color-dark_orange);
 }
 

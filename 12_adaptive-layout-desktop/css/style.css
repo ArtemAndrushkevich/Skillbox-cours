@@ -502,7 +502,7 @@ body {
 }
 
 .footer-nav__link {
-  color: var(--color-white);
+  color: var(--color-light_grey);
   font-size: 18px;
   font-weight: 600;
   line-height: 36px;
@@ -538,24 +538,21 @@ body {
   max-width: 570px;
 }
 
-.form__title {
-  margin-bottom: 25px;
-  color: var(--color-white);
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 59px;
-}
-
 .form {
   display: flex;
   flex-direction: column;
 }
 
 .form__title {
+  margin-bottom: 25px;
+  color: var(--color-light_grey);
   font-size: 48px;
   font-weight: 400;
   line-height: 59px;
-  color: var(--color-white);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 59px;
+  color: var(--color-light_grey);
 }
 
 .form__input {
@@ -581,7 +578,7 @@ body {
 
 .form__label {
   margin-left: 19px;
-  color: var(--color-white);
+  color: var(--color-light_grey);
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -592,7 +589,7 @@ body {
 }
 
 .slogan__descr {
-  color: var(--color-white);
+  color: var(--color-light_grey);
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;

@@ -67,16 +67,19 @@
   .card-right--down-img {
     background-position: 10.5% 50%;
   }
+
+  /* stages */
   .stages {
     margin-bottom: 82px;
   }
-
-  .stages__descr {
-    max-width: 49%;
+  .stages__content--left {
+    padding-right: 0;
   }
   .stages__btn {
     margin-top: 24px;
   }
+
+  /* questions */
   .questions {
     margin-bottom: 80px;
   }
@@ -86,6 +89,8 @@
   .questions__title {
     margin-bottom: 31px;
   }
+
+  /* footer */
   .footer {
     padding: 50px 0 0 0;
   }
@@ -164,13 +169,19 @@
     background-position: 7.2% 50%;
     background-size: 17%;
   }
-  .stages__title {
-    margin-bottom: 354px;
+  .stages__block {
+    flex-direction: column-reverse;
   }
-
+  .stages__box {
+    margin: 0;
+    width: 100%;
+    padding-top: 38px;
+  }
   .stages__descr {
-    max-width: 100%;
-    display: inline;
+    display: contents;
+  }
+  .stages__content--img {
+    min-height: 285px;
   }
   .questions__item {
     padding: 36px 70px 34px 40px
@@ -383,8 +394,11 @@
   .stages {
     margin-bottom: 59px;
   }
+  .stages__box {
+    padding-top: 15px;
+  }
   .stages__title {
-    margin-bottom: -70px;
+    margin-bottom: 20px;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -401,9 +415,9 @@
     font-weight: 400;
     line-height: 28px;
   }
-  .stages__content--img::before {
-    min-height: 266px;
-    position: relative;
+  .stages__content--img {
+    min-height: 160px;
+    border-radius: 20px;
   }
 
   .stages__btn {

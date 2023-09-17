@@ -177,9 +177,6 @@
     width: 100%;
     padding-top: 38px;
   }
-  .stages__descr {
-    display: contents;
-  }
   .stages__content--img {
     min-height: 285px;
   }
